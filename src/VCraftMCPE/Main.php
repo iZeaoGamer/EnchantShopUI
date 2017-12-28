@@ -23,7 +23,7 @@ class Main extends PluginBase implements Listener{
         $player = $sender->getPlayer();
      $cd = strtolower($cmd->getName());
         switch ($cd){
-            case "enchantshop":
+            case "enchantui":
                 $this->EnchantForm($player);
                 break;
         }
