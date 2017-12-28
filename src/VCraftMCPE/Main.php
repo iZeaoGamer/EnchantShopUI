@@ -29,7 +29,7 @@ class Main extends PluginBase implements Listener{
         }
         return true;
     }
-  public function EnchantForm(){
+  public function EnchantForm($player){
     $plugin = $this->getServer()->getPluginManager();
         $formapi = $plugin->getPlugin("FormAPI");
         $form = $formapi->createSimpleForm(function (Player $event, array $args){
