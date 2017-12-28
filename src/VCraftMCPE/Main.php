@@ -24,12 +24,12 @@ class Main extends PluginBase implements Listener{
      $cd = strtolower($cmd->getName());
         switch ($cd){
             case "enchantui":
-                $this->EnchantForm($player);
+                $this->EnchantForm($sender);
                 break;
         }
         return true;
     }
-  public function EnchantForm($player){
+  public function EnchantForm(){
     $plugin = $this->getServer()->getPluginManager();
         $formapi = $plugin->getPlugin("FormAPI");
         $form = $formapi->createSimpleForm(function (Player $event, array $args){
@@ -63,7 +63,7 @@ class Main extends PluginBase implements Listener{
         $form->addButton("");
         $form->addButton("");
         $form->addButton("");
-        $form->sendToPlayer($player);
+        $form->sendToPlayer($sender);
   }
   
 }
