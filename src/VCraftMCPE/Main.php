@@ -54,7 +54,6 @@ class Main extends PluginBase implements Listener{
                     return;
             }
         });
-     $player = $event->getPlayer();
     $form->setTitle("enchant");
         $form->setContent("sdasdasdsa ");
         $form->addButton("Exit");
